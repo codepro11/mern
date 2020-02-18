@@ -4,13 +4,19 @@
   "description": "MERN stack example",
   "main": "index.js",
   "scripts": {
-    "test": "node ."
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node index.js",
+    "client": "npm run start --prefix client",
+    "dev": "\"npm run server\" \"npm run client\"",
+    "start": "node index.js"    
   },
   "author": "Aneesha",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "http-proxy-middleware": "^0.21.0",
     "mongodb": "^3.5.3",
     "mongoose": "^5.9.1"
   }
